@@ -1,0 +1,24 @@
+{
+  "miguel@student.edu": {
+    "name": "miguel",
+    "email": "miguel@student.edu",
+    "user_id": "a628acbc857b9043",
+    "created_date": "2025-09-21 02:22:19.502275",
+    "saved_passwords": []
+  },
+  "rita@student.edu": {
+    "name": "rita",
+    "email": "rita@student.edu",
+    "user_id": "2f1d32a8fd585711",
+    "created_date": "2025-09-21 02:28:09.049398",
+    "saved_passwords": [
+      {
+        "website": "github/rita",
+        "username": "rita",
+        "password": "28I2S>-wcuC,cdpR",
+        "created": "2025-09-21 02:35:13.096558",
+        "strength": "\ud83d\udc9a Very Strong"
+      }
+    ]
+  }
+}
