@@ -1,9 +1,9 @@
 # 🔐 Secure Password Generator
 **Course:** Computer Science (Diploma 2) - Project Course
-**Student:** [Student Name] - Meeky
-**Matric Number:** [Student ID]
-**Lecturer:** [Course Supervisor]
-**Institution**[Univesity/College Name]
+**Student:** Emmanuel Esther Olaadura ] - Meeky
+**Matric Number:** [23280591052]
+**Lecturer:** [Dr.Oloyede]
+**Institution**[Lagos State University]
 **Date:** September 2025
 
 ## 📋 Project Overview
