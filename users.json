@@ -20,5 +20,20 @@
         "strength": "\ud83d\udc9a Very Strong"
       }
     ]
+  },
+  "e07802193@gmail.com": {
+    "name": "esther",
+    "email": "e07802193@gmail.com",
+    "user_id": "a5afa7b396626014",
+    "created_date": "2025-09-22 14:56:31.723539",
+    "saved_passwords": [
+      {
+        "website": "youtube",
+        "username": "esther",
+        "password": "X:uZeDRiUIIr<I,W",
+        "created": "2025-09-22 14:57:54.631213",
+        "strength": "\ud83d\udfe2 Strong"
+      }
+    ]
   }
 }
