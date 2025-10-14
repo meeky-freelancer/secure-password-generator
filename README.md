@@ -1,9 +1,9 @@
 # 🔐 Secure Password Generator
 **Course:** Computer Science (Diploma 2) - Project Course
-**Student:** [Student Name] - Meeky
-**Matric Number:** [Student ID]
-**Lecturer:** [Course Supervisor]
-**Institution**[Univesity/College Name]
+**Student:** Emmanuel Esther Olaadura - Meeky
+**Matric Number:** 23280591052
+**Lecturer:** Dr Oloyede
+**Institution** Lagos State University(L.A.S.U)
 **Date:** September 2025
 
 ## 📋 Project Overview
@@ -23,5 +23,29 @@ A comprehensive password generator application implementing secure authenticatio
 git clone https://github.com/meeky-freelancer/secure-password-generator.git
 cd secure-password-generator
 
-# Run the application
+# 🚀 How to Run This Project
+
+To run this Tkinter-based Secure Password Generator on your local machine:
+
+Requirements
+- Python 3.x installed
+- Tkinter (usually comes pre-installed with Python)
+- Git (optional, for cloning)
+
+Steps
+
+1. Clone the Repository (or download it manually):
+   `bash
+   git clone https://github.com/meeky-freelancer/secure-password-generator.git
+   `
+
+2. Navigate to the Project Folder:
+   `bash
+   cd secure-password-generator
+   `
+
+3. Run the application
 python src/secure_password_generator.py
+   `
+
+> 💡 If you don’t have Git, you can click the green Code button on this page, choose Download ZIP, extract the folder, and run python src/secure_password_generator.py manually.

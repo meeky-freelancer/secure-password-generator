@@ -132,14 +132,14 @@ class SecurePasswordGenerator:
         # Result frame
         result_frame = tk.LabelFrame(self.app, text="Generated Password", 
                                    font=("Arial", 10, "bold"),
-                                   fg="#00ff88", bg="#2b2b2b", 
+                                   fg="#000000", bg="#2b2b2b", 
                                    relief="ridge", bd=2)
         result_frame.pack(pady=10, padx=20, fill="x")
         
         self.result_var = tk.StringVar()
         result_entry = tk.Entry(result_frame, textvariable=self.result_var, 
                               width=45, font=("Courier", 11),
-                              bg="#404040", fg="#00ff88", 
+                              bg="#404040", fg="#000000", 
                               insertbackground="white",
                               relief="flat", bd=5)
         result_entry.pack(pady=8, padx=10)
@@ -453,7 +453,7 @@ class SecurePasswordGenerator:
         # Title
         tk.Label(view_window, text=f"💾 Saved Passwords for {self.auth.current_user_name}", 
                 font=("Arial", 16, "bold"), 
-                fg="#00ff88", bg="#2b2b2b").pack(pady=15)
+                fg="#000000", bg="#2b2b2b").pack(pady=15)
         
         # Create scrollable frame
         canvas = tk.Canvas(view_window, bg="#2b2b2b", highlightthickness=0)
@@ -496,7 +496,7 @@ class SecurePasswordGenerator:
             
             password_var = tk.StringVar(value="••••••••••••")
             password_display = tk.Entry(password_frame, textvariable=password_var,
-                                       font=("Courier", 10), bg="#404040", fg="#00ff88",
+                                       font=("Courier", 10), bg="#404040", fg="#000000",
                                        state="readonly", width=25, relief="flat", bd=3)
             password_display.pack(side="left", padx=10)
             
@@ -513,7 +513,7 @@ class SecurePasswordGenerator:
             
             toggle_btn = tk.Button(password_frame, text="👁️ Show",
                                   command=create_toggle_func(),
-                                  bg="#2196F3", fg="white", font=("Arial", 8),
+                                  bg="#000000", fg="white", font=("Arial", 8),
                                   relief="flat", padx=8, pady=2, cursor="hand2")
             toggle_btn.pack(side="left", padx=5)
             
