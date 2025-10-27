@@ -10,7 +10,7 @@
 A comprehensive password generator application implementing secure authentication and password management using Python's Tkinter GUI framework with simplified user experience.
 
 ## ✨ Features
-- 🔐 **Simple Authentication** - Name and email signup (no complex passwords!)
+- 🔐 **Simple Authentication** - Name and password signup (no complex password combination!)
 - 👋 **Personalized Experience** - Welcoming interface with user recognition
 - 🎲 **Smart Password Generation** - Customizable length and character sets
 - 💾 **Password Management** - Save and organize generated passwords

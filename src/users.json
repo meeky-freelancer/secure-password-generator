@@ -1,0 +1,46 @@
+{
+  "2265": {
+    "name": "Esther",
+    "password": "2265",
+    "user_id": "ced9953ee034fc04",
+    "created_date": "2025-10-27 02:53:43.768543",
+    "saved_passwords": [
+      {
+        "website": "rita",
+        "username": "e07802193@gmail.com",
+        "password": "Uz2N>^Jg&",
+        "created": "2025-10-27 02:54:36.857590",
+        "strength": "\ud83d\udfe2 Strong"
+      },
+      {
+        "website": "gmail",
+        "username": "e07802193@gmail.com",
+        "password": "16#jL[Ggu=VkX;XL",
+        "created": "2025-10-27 03:02:32.189910",
+        "strength": "\ud83d\udc9a Very Strong"
+      },
+      {
+        "website": "eree",
+        "username": "esther",
+        "password": "A+<y*;VZ*^.5Q&G=",
+        "created": "2025-10-27 03:15:23.830939",
+        "strength": "\ud83d\udc9a Very Strong"
+      }
+    ]
+  },
+  "1234": {
+    "name": "Stella",
+    "password": "1234",
+    "user_id": "5d8ff77b62b88fe3",
+    "created_date": "2025-10-27 03:44:33.092830",
+    "saved_passwords": [
+      {
+        "website": "Youtube",
+        "username": "boojoy34@gmail.com",
+        "password": ":2KBhEE]L;0dhXm>",
+        "created": "2025-10-27 03:53:18.351797",
+        "strength": "\ud83d\udc9a Very Strong"
+      }
+    ]
+  }
+}

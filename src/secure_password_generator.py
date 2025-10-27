@@ -46,10 +46,10 @@ class SecurePasswordGenerator:
                              font=("Arial", 12, "bold"), fg="#00ff88", bg="#1a1a1a")
         user_label.pack(side="left", padx=10, pady=5)
         
-        email_label = tk.Label(header_frame, 
-                              text=f"📧 {self.auth.current_user}", 
-                              font=("Arial", 9), fg="#cccccc", bg="#1a1a1a")
-        email_label.pack(side="left", padx=5, pady=5)
+        #email_label = tk.Label(header_frame, 
+                              #text=f"📧 {self.auth.current_user}", 
+                              #font=("Arial", 9), fg="#cccccc", bg="#1a1a1a")
+        #email_label.pack(side="left", padx=5, pady=5)
         
         logout_btn = tk.Button(header_frame, text="🚪 Logout", 
                               command=self.logout,
@@ -103,7 +103,7 @@ class SecurePasswordGenerator:
         tk.Checkbutton(checkbox_frame, text="🔤 Uppercase (A-Z)", 
                       variable=self.include_upper, fg="white", bg="#2b2b2b",
                       selectcolor="#404040", font=("Arial", 9),
-                      activebackground="#2b2b2b", activeforeground="white").grid(row=0, column=0, sticky="w", padx=5, pady=2)
+                      activebackground="#2b2b2b", activeforeground="white").grid(row=0, column=0, sticky="W", padx=5, pady=2)
         
         tk.Checkbutton(checkbox_frame, text="🔡 Lowercase (a-z)", 
                       variable=self.include_lower, fg="white", bg="#2b2b2b",
@@ -132,14 +132,14 @@ class SecurePasswordGenerator:
         # Result frame
         result_frame = tk.LabelFrame(self.app, text="Generated Password", 
                                    font=("Arial", 10, "bold"),
-                                   fg="#000000", bg="#2b2b2b", 
+                                   fg="#4caf50", bg="#2b2b2b", 
                                    relief="ridge", bd=2)
         result_frame.pack(pady=10, padx=20, fill="x")
         
         self.result_var = tk.StringVar()
         result_entry = tk.Entry(result_frame, textvariable=self.result_var, 
-                              width=45, font=("Courier", 11),
-                              bg="#404040", fg="#000000", 
+                              width=45, font=("Courier", 14),
+                              bg="#404040", fg="#ffffff", 
                               insertbackground="white",
                               relief="flat", bd=5)
         result_entry.pack(pady=8, padx=10)
@@ -353,7 +353,7 @@ class SecurePasswordGenerator:
         # Create email verification dialog
         verify_dialog = tk.Toplevel(self.app)
         verify_dialog.title("🔐 Verify Access")
-        verify_dialog.geometry("350x200")
+        verify_dialog.geometry("350x300")
         verify_dialog.configure(bg="#2b2b2b")
         verify_dialog.resizable(False, False)
         
@@ -371,33 +371,32 @@ class SecurePasswordGenerator:
         tk.Label(verify_dialog, text="🔐 Verify Your Identity", 
                 font=("Arial", 16, "bold"), 
                 fg="#00ff88", bg="#2b2b2b").pack(pady=20)
-        
-        # Email field
-        tk.Label(verify_dialog, text="📧 Enter your email to view saved passwords:", 
+        # Password field
+        tk.Label(verify_dialog, text="🔑 Enter your password to view saved passwords:", 
                 font=("Arial", 10), fg="white", bg="#2b2b2b").pack(pady=(10,5))
-        
-        email_var = tk.StringVar()
-        email_entry = tk.Entry(verify_dialog, textvariable=email_var, 
+
+        password_var = tk.StringVar()
+        password_entry = tk.Entry(verify_dialog, textvariable=password_var, 
                               width=30, font=("Arial", 11),
                               bg="#404040", fg="white", 
-                              insertbackground="white", relief="flat", bd=5)
-        email_entry.pack(pady=10)
-        email_entry.focus_set()
+                              insertbackground="white", relief="flat", bd=5, show="*")
+        password_entry.pack(pady=10)
+        password_entry.focus_set()
         
         def verify_and_show():
-            entered_email = email_var.get().strip().lower()
+            entered_password = password_var.get().strip()
             
-            if not entered_email:
-                messagebox.showwarning("Missing Email", "Please enter your email!")
-                email_entry.focus_set()
+            if not entered_password:
+                messagebox.showwarning("Missing Password", "Please enter your password!")
+                password_entry.focus_set()
                 return
             
             # Verify email matches current user
-            if entered_email != self.auth.current_user:
+            if entered_password != self.auth.current_user:
                 messagebox.showerror("❌ Access Denied", 
-                    "Email doesn't match your account! Access denied.")
-                email_entry.focus_set()
-                email_entry.select_range(0, tk.END)
+                    "Password doesn't match your account! Access denied.")
+                password_entry.focus_set()
+                password_entry.select_range(0, tk.END)
                 return
             
             # Email verified, show passwords
@@ -408,7 +407,7 @@ class SecurePasswordGenerator:
             verify_dialog.destroy()
         
         # Enter key binding
-        email_entry.bind('<Return>', lambda e: verify_and_show())
+        password_entry.bind('<Return>', lambda e: verify_and_show())
         
         # Buttons
         buttons_frame = tk.Frame(verify_dialog, bg="#2b2b2b")
@@ -453,7 +452,7 @@ class SecurePasswordGenerator:
         # Title
         tk.Label(view_window, text=f"💾 Saved Passwords for {self.auth.current_user_name}", 
                 font=("Arial", 16, "bold"), 
-                fg="#000000", bg="#2b2b2b").pack(pady=15)
+                fg="#4caf50", bg="#2b2b2b").pack(pady=15)
         
         # Create scrollable frame
         canvas = tk.Canvas(view_window, bg="#2b2b2b", highlightthickness=0)
